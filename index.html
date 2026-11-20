@@ -1,1334 +1,666 @@
 <!DOCTYPE html>
-2
 <html lang="en">
-3
 
-4
 <head>
-5
     <meta charset="UTF-8">
-6
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-7
     <title>Aswin Kumar A</title>
-8
     <link
-9
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@300;400;500&display=swap"
-10
         rel="stylesheet">
-11
     <link rel="stylesheet" href="./style.css">
-12
 </head>
-13
 
-14
 <body>
-15
 
-16
-
-
     <!-- Scroll progress bar -->
-17
     <div class="scroll-bar" id="scrollBar"></div>
-18
 
-19
     <nav id="navbar">
-20
         <a href="#top" class="brand">Aswin Kumar A</a>
-21
         <div class="nav-links">
-22
             <a href="#skills">Skills</a>
-23
             <a href="#projects">Projects</a>
-24
             <a href="#experience">Experience</a>
-25
             <a href="#education">Education</a>
-26
             <a href="#contact">Contact</a>
-27
             <a href="https://github.com/aswin0904" target="_blank" class="btn-sm">↗&nbsp;GitHub</a>
-28
         </div>
-29
         <!-- Mobile menu toggle -->
-30
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-31
             <span></span><span></span><span></span>
-32
         </button>
-33
     </nav>
-34
 
-35
     <!-- HERO -->
-36
     <div id="top" class="hero">
-37
         <div class="hero-l">
-38
             <div class="eyebrow hero-anim" style="--d:0ms">RTL Designer &amp; FPGA Engineer</div>
-39
             <h1 class="hero-name hero-anim" style="--d:120ms">Aswin<br><em>Kumar A</em></h1>
-40
             <p class="hero-sub hero-anim" style="--d:240ms">// B.E. EEE · SSN College of Engineering · Chennai</p>
-41
             <p class="hero-bio hero-anim" style="--d:360ms">
-42
                 I build things at the <strong>silicon level</strong> — single-cycle RISC-V processors,
-43
                 UART interfaces on FPGAs, autonomous robots, and full computing stacks from
-44
                 RTL all the way to a working compiler.
-45
                 Interested in computer architecture, VLSI, and anything where hardware meets software.
-46
             </p>
-47
             <div class="hero-btns hero-anim" style="--d:480ms">
-48
                 <a href="#projects" class="btn-primary">See my projects →</a>
-49
                 <a href="https://github.com/aswin0904" target="_blank" class="btn-secondary">GitHub profile</a>
-50
                 <a href="https://www.linkedin.com/in/aswin-kumar-a-" target="_blank" class="btn-secondary">LinkedIn
-51
                     ↗</a>
-52
             </div>
-53
         </div>
-54
 
-55
         <div class="hero-r hero-anim" style="--d:200ms">
-56
             <div class="stat-grid">
-57
                 <div class="stat-box">
-58
                     <div class="stat-n">8.24</div>
-59
                     <div class="stat-l">CGPA / 10</div>
-60
                 </div>
-61
                 <div class="stat-box">
-62
                     <div class="stat-n">9+</div>
-63
                     <div class="stat-l">Projects</div>
-64
                 </div>
-65
                 <div class="stat-box">
-66
                     <div class="stat-n">Top 25</div>
-67
                     <div class="stat-l">E-Yantra IIT-B</div>
-68
                 </div>
-69
                 <div class="stat-box">
-70
                     <div class="stat-n">96.2</div>
-71
                     <div class="stat-l">12th / 100</div>
-72
                 </div>
-73
             </div>
-74
 
-75
             <div class="vcode" id="vcode">
-76
                 <span class="vc">// aswin_kumar.v</span><br>
-77
                 <span class="vk">module</span> <span class="vt">aswin_kumar</span> (<br>
-78
                 &nbsp;&nbsp;<span class="vk">input</span>&nbsp;&nbsp;<span class="vk">wire</span> passion,<br>
-79
                 &nbsp;&nbsp;<span class="vk">input</span>&nbsp;&nbsp;<span class="vk">wire</span> curiosity,<br>
-80
                 &nbsp;&nbsp;<span class="vk">output</span> <span class="vk">reg</span>&nbsp; innovation<br>
-81
                 );<br>
-82
                 &nbsp;&nbsp;<span class="vk">always</span> @(<span class="vk">posedge</span> passion) <span
-83
                     class="vk">begin</span><br>
-84
                 &nbsp;&nbsp;&nbsp;&nbsp;innovation &lt;= curiosity &amp; hardwork;<br>
-85
                 &nbsp;&nbsp;<span class="vk">end</span><br>
-86
                 <span class="vk">endmodule</span>
-87
                 <span class="cursor-blink">▌</span>
-88
             </div>
-89
         </div>
-90
     </div>
-91
 
-92
     <hr class="div">
-93
 
-94
     <!-- SKILLS -->
-95
     <div class="sec" id="skills">
-96
         <div class="r">
-97
             <div class="sec-lbl">01 — Technical Stack</div>
-98
             <h2 class="sec-h">What I work with,<br><em>and what I've built mastery in</em></h2>
-99
         </div>
-100
         <div class="skills-grid r">
-101
             <div class="sk">
-102
                 <div class="sk-cat">HDL / RTL</div>
-103
                 <div class="sk-name">Hardware Description</div>
-104
                 <div class="pills">
-105
                     <span class="pill on">Verilog</span>
-106
                     <span class="pill on">SystemVerilog</span>
-107
                     <span class="pill">VHDL</span>
-108
                 </div>
-109
             </div>
-110
             <div class="sk">
-111
                 <div class="sk-cat">FPGA Platforms</div>
-112
                 <div class="sk-name">Development Boards</div>
-113
                 <div class="pills">
-114
                     <span class="pill on">Basys 2</span>
-115
                     <span class="pill on">DE0-Nano</span>
-116
                     <span class="pill">Xilinx ISE</span>
-117
                     <span class="pill">Intel Quartus</span>
-118
                 </div>
-119
             </div>
-120
             <div class="sk">
-121
                 <div class="sk-cat">EDA Tools</div>
-122
                 <div class="sk-name">Synthesis &amp; Physical Design</div>
-123
                 <div class="pills">
-124
                     <span class="pill on">Vivado</span>
-125
                     <span class="pill on">KiCad</span>
-126
                     <span class="pill">Cadence Genus</span>
-127
                     <span class="pill">Innovus</span>
-128
                     <span class="pill">Tempus</span>
-129
                 </div>
-130
             </div>
-131
             <div class="sk">
-132
                 <div class="sk-cat">Embedded / MCU</div>
-133
                 <div class="sk-name">Microcontrollers &amp; Bare-Metal</div>
-134
                 <div class="pills">
-135
                     <span class="pill on">STM32</span>
-136
                     <span class="pill on">C</span>
-137
                     <span class="pill">PWM</span>
-138
                     <span class="pill">RF Comms</span>
-139
                     <span class="pill">UART</span>
-140
                 </div>
-141
             </div>
-142
             <div class="sk">
-143
                 <div class="sk-cat">Architecture</div>
-144
                 <div class="sk-name">ISA &amp; Processor Design</div>
-145
                 <div class="pills">
-146
                     <span class="pill on">RISC-V RV32I</span>
-147
                     <span class="pill on">Von Neumann</span>
-148
                     <span class="pill">ALU Design</span>
-149
                     <span class="pill">Pipelining</span>
-150
                 </div>
-151
             </div>
-152
             <div class="sk">
-153
                 <div class="sk-cat">Software</div>
-154
                 <div class="sk-name">Toolchain &amp; Scripting</div>
-155
                 <div class="pills">
-156
                     <span class="pill on">Python</span>
-157
                     <span class="pill">Assembler</span>
-158
                     <span class="pill">VM Translator</span>
-159
                     <span class="pill">Compiler</span>
-160
                 </div>
-161
             </div>
-162
         </div>
-163
     </div>
-164
 
-165
     <hr class="div">
-166
 
-167
     <!-- PROJECTS -->
-168
     <div class="sec" id="projects">
-169
         <div class="r">
-170
             <div class="sec-lbl">02 — Projects</div>
-171
             <h2 class="sec-h">Things I've designed<br><em>and built from scratch</em></h2>
-172
         </div>
-173
 
-174
         <div class="tabs r">
-175
             <button class="tb on" onclick="switchTab(event,'all')">All</button>
-176
             <button class="tb" onclick="switchTab(event,'fpga')">FPGA / RTL</button>
-177
             <button class="tb" onclick="switchTab(event,'hw')">Hardware</button>
-178
             <button class="tb" onclick="switchTab(event,'sw')">Software</button>
-179
         </div>
-180
 
-181
         <!-- ALL -->
-182
         <div class="tp on" id="tp-all">
-183
             <div class="pg">
-184
 
-185
                 <!-- FEATURED 1 — Hack Computer -->
-186
                 <div class="pc featured r">
-187
                     <div class="featured-accent"></div>
-188
                     <div class="featured-inner">
-189
                         <div class="featured-header">
-190
                             <div class="featured-badge">
-191
                                 <span class="feat-star">★</span> Featured Project
-192
                             </div>
-193
                             <span class="py">2025 — Coursera · Nand2Tetris</span>
-194
                         </div>
-195
                         <h3 class="pt featured-title">Hack Computer<br><span class="feat-sub">Full 16-bit Von Neumann
-196
                                 Machine</span></h3>
-197
                         <p class="pd">Built a complete computing stack from bare silicon to running programs — a 16-bit
-198
                             CPU in Verilog (ALU, controller, datapath, memory), then the software layers on top: an
-199
                             assembler, a VM translator, and a full JACK language compiler. One project. Every layer.
-200
                             Nothing borrowed.</p>
-201
                         <div class="pst">
-202
                             <span class="ps">Verilog</span>
-203
                             <span class="ps">Vivado</span>
-204
                             <span class="ps">Python</span>
-205
                             <span class="ps">Von Neumann Arch</span>
-206
                             <span class="ps">Assembler</span>
-207
                             <span class="ps">Compiler</span>
-208
                         </div>
-209
                         <div class="featured-footer">
-210
                             <a href="https://github.com/aswin0904/HACK" target="_blank" class="gh-btn">
-211
                                 <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-212
                                     <path
-213
                                         d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-214
                                 </svg>
-215
                                 View on GitHub ↗
-216
                             </a>
-217
                         </div>
-218
                     </div>
-219
                 </div>
-220
 
-221
                 <!-- FEATURED 2 — PCB Transceiver -->
-222
                 <div class="pc featured featured-green r">
-223
                     <div class="featured-accent"></div>
-224
                     <div class="featured-inner">
-225
                         <div class="featured-header">
-226
                             <div class="featured-badge">
-227
                                 <span class="feat-star">★</span> Featured Project
-228
                             </div>
-229
                             <span class="py">2025 — SSN College · Drone Dev</span>
-230
                         </div>
-231
                         <h3 class="pt featured-title">PCB Transceiver<br><span class="feat-sub">Custom RF Board for
-232
                                 Drone Control</span></h3>
-233
                         <p class="pd">Hand-etched PCB with STM32 + nRF24L01 RF for real-time drone comms — designed in
-234
                             KiCad, fabricated by hand. Custom C firmware handles signal encoding, PWM motor control, and
-235
                             packet decoding end-to-end. Tested extensively for range, noise, and signal integrity under
-236
                             real flight conditions.</p>
-237
                         <div class="pst">
-238
                             <span class="ps">KiCad</span>
-239
                             <span class="ps">STM32</span>
-240
                             <span class="ps">C</span>
-241
                             <span class="ps">PCB Design</span>
-242
                             <span class="ps">nRF24L01</span>
-243
                             <span class="ps">RF Comms</span>
-244
                         </div>
-245
                         <div class="featured-footer">
-246
                             <a href="https://github.com/aswin0904/Stm32_based_Transceiver" target="_blank"
-247
                                 class="gh-btn gh-btn-green">
-248
                                 <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-249
                                     <path
-250
                                         d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-251
                                 </svg>
-252
                                 View on GitHub ↗
-253
                             </a>
-254
                         </div>
-255
                     </div>
-256
                 </div>
-257
 
-258
                 <!-- Regular cards -->
-259
                 <div class="pc r">
-260
                     <div class="pm"><span class="py">2026 — E-Yantra, IIT Bombay</span><span class="pb pb-r">🏆 Top
-261
                             25</span></div>
-262
                     <h3 class="pt">Maze-Solving Autonomous Robot</h3>
-263
                     <p class="pd">FPGA-controlled robot that navigates mazes on its own — ultrasonic, DHT11, and soil
-264
                         moisture sensors feeding real-time decisions. 3D-printed chassis, custom motor drivers, all
-265
                         logic in Verilog. Top 25 nationally at E-Yantra.</p>
-266
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Intel Quartus</span><span
-267
                             class="ps">DE0-Nano</span><span class="ps">Sensor Fusion</span></div>
-268
                     <br>
-269
                     <a href="https://github.com/aswin0904/Eyantra" target="_blank" class="gh-btn">
-270
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-271
                             <path
-272
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-273
                         </svg>
-274
                         View on GitHub ↗
-275
                     </a>
-276
                 </div>
-277
                 <div class="pc r">
-278
                     <div class="pm"><span class="py">2025 — SSN College</span><span class="pb pb-b">FPGA</span></div>
-279
                     <h3 class="pt">Single-Cycle RISC-V Processor</h3>
-280
                     <p class="pd">A fully functional RV32I processor in Verilog — ALU, register file, control unit, and
-281
                         memory, all wired into a single-cycle datapath. Extensively verified in Vivado across all
-282
                         instruction types.</p>
-283
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Vivado</span><span
-284
                             class="ps">RISC-V RV32I</span></div>
-285
                     <br>
-286
                     <a href="https://github.com/aswin0904/Verilog" target="_blank" class="gh-btn">
-287
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-288
                             <path
-289
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-290
                         </svg>
-291
                         View on GitHub ↗
-292
                     </a>
-293
                 </div>
-294
 
-295
                 <div class="pc r">
-296
                     <div class="pm"><span class="py">2025 — Drone Dev</span><span class="pb pb-p">Embedded</span></div>
-297
                     <h3 class="pt">IMU Sensor Fusion with Kalman Filter</h3>
-298
                     <p class="pd">Fused accelerometer, gyroscope, and magnetometer data to get clean roll, pitch, and
-299
                         yaw. A Kalman filter cuts through noise and keeps orientation reliable — essential for stable
-300
                         flight control.</p>
-301
                     <div class="pst"><span class="ps">Python</span><span class="ps">Kalman Filter</span><span
-302
                             class="ps">IMU</span><span class="ps">Sensor Fusion</span></div>
-303
                     <br>
-304
                     <a href="https://github.com/aswin0904/Sensor-Fusion-with-kalman-filter" target="_blank"
-305
                         class="gh-btn">
-306
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-307
                             <path
-308
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-309
                         </svg>
-310
                         View on GitHub ↗
-311
                     </a>
-312
                 </div>
-313
                 <div class="pc r">
-314
                     <div class="pm"><span class="py">2025 — SSN College</span><span class="pb pb-b">FPGA</span></div>
-315
                     <h3 class="pt">UART Serial Interface on FPGA</h3>
-316
                     <p class="pd">Rock-solid UART between FPGA and PC — configurable baud, TX/RX buffering, error
-317
                         detection. Paired with a Python host tool for automated testing and live data visualisation.</p>
-318
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Xilinx</span><span class="ps">Basys
-319
                             2</span><span class="ps">Python</span></div>
-320
                     <br>
-321
                     <a href="https://github.com/aswin0904/FPGA" target="_blank" class="gh-btn">
-322
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-323
                             <path
-324
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-325
                         </svg>
-326
                         View on GitHub ↗
-327
                     </a>
-328
                 </div>
-329
 
-330
 
-331
                 <div class="pc r">
-332
                     <div class="pm"><span class="py">2025 — SSN College</span><span class="pb pb-b">FPGA</span></div>
-333
                     <h3 class="pt">Encoder &amp; Motor Control on FPGA</h3>
-334
                     <p class="pd">Rotary encoder feeds real-time position data to the FPGA; PWM signals drive a BLDC
-335
                         motor via ESC. Closed-loop speed control — precise, responsive, built entirely in Verilog on
-336
                         Basys 2.</p>
-337
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Xilinx</span><span class="ps">Basys
-338
                             2</span><span class="ps">BLDC</span><span class="ps">PWM</span></div>
-339
                     <br>
-340
                     <a href="https://github.com/aswin0904/FPGA" target="_blank" class="gh-btn">
-341
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-342
                             <path
-343
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-344
                         </svg>
-345
                         View on GitHub ↗
-346
                     </a>
-347
                 </div>
-348
 
-349
                 <div class="pc r">
-350
                     <div class="pm"><span class="py">Linux Kernel</span><span class="pb pb-g">Software</span></div>
-351
                     <h3 class="pt">Linux Device Driver Development</h3>
-352
                     <p class="pd">Developed Linux kernel modules in C and explored kernel-level programming. Implemented kernel-to-user space data communication through system calls, and built and tested modules using a Makefile with insmod, lsmod, and rmmod.</p>
-353
                     <div class="pst"><span class="ps">C</span><span class="ps">Linux Kernel</span><span class="ps">Device Drivers</span><span class="ps">Makefile</span></div>
-354
                 </div>
-355
 
-356
                 <div class="pc r">
-357
                     <div class="pm"><span class="py">STM32F103C8T6</span><span class="pb pb-p">Embedded</span></div>
-358
                     <h3 class="pt">I2C Low-Level Driver for STM32 Blue Pill</h3>
-359
                     <p class="pd">Designed and developed a register-level I2C driver covering GPIO configuration, peripheral clock setup, register configuration, and START/STOP condition generation. Implemented data transmission and reception, slave addressing, ACK/NACK handling, and status flag monitoring. Debugged and validated hardware communication and integrated the driver with the application layer.</p>
-360
                     <div class="pst"><span class="ps">C</span><span class="ps">STM32F103C8T6</span><span class="ps">I2C</span><span class="ps">Register-Level</span><span class="ps">GPIO</span></div>
-361
                 </div>
-362
 
-363
             </div>
-364
         </div>
-365
 
-366
         <!-- FPGA tab -->
-367
         <div class="tp" id="tp-fpga">
-368
             <div class="pg">
-369
                 <div class="pc r">
-370
                     <div class="pm"><span class="py">2025</span><span class="pb pb-b">RTL</span></div>
-371
                     <h3 class="pt">Single-Cycle RISC-V Processor</h3>
-372
                     <p class="pd">Full RV32I ISA — ALU, register file, control unit, memory. Verified across all
-373
                         instruction types in Vivado.</p>
-374
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Vivado</span><span
-375
                             class="ps">RISC-V</span></div>
-376
                     <br><a href="https://github.com/aswin0904/Verilog" target="_blank" class="gh-btn"><svg width="13"
-377
                             height="13" viewBox="0 0 24 24" fill="currentColor">
-378
                             <path
-379
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-380
                         </svg>GitHub ↗</a>
-381
                 </div>
-382
                 <div class="pc r">
-383
                     <div class="pm"><span class="py">2025</span><span class="pb pb-b">FPGA</span></div>
-384
                     <h3 class="pt">UART Serial Interface</h3>
-385
                     <p class="pd">Configurable baud UART with TX/RX buffering, error detection, and a Python host
-386
                         visualiser for live data.</p>
-387
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Basys 2</span><span
-388
                             class="ps">Python</span></div>
-389
                     <br><a href="https://github.com/aswin0904/FPGA" target="_blank" class="gh-btn"><svg width="13"
-390
                             height="13" viewBox="0 0 24 24" fill="currentColor">
-391
                             <path
-392
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-393
                         </svg>GitHub ↗</a>
-394
                 </div>
-395
                 <div class="pc r">
-396
                     <div class="pm"><span class="py">2025</span><span class="pb pb-b">FPGA</span></div>
-397
                     <h3 class="pt">Encoder &amp; Motor Control</h3>
-398
                     <p class="pd">Rotary encoder + BLDC via ESC — closed-loop PWM speed control, all in Verilog on Basys
-399
                         2.</p>
-400
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">Xilinx</span><span
-401
                             class="ps">BLDC</span></div>
-402
                     <br><a href="https://github.com/aswin0904/FPGA" target="_blank" class="gh-btn"><svg width="13"
-403
                             height="13" viewBox="0 0 24 24" fill="currentColor">
-404
                             <path
-405
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-406
                         </svg>GitHub ↗</a>
-407
                 </div>
-408
                 <div class="pc r">
-409
                     <div class="pm"><span class="py">2026</span><span class="pb pb-r">🏆 Top 25</span></div>
-410
                     <h3 class="pt">Maze-Solving Robot (E-Yantra)</h3>
-411
                     <p class="pd">Multi-sensor FPGA robot — ultrasonic, DHT11, soil moisture — autonomous navigation and
-412
                         pathfinding. National top 25.</p>
-413
                     <div class="pst"><span class="ps">Verilog</span><span class="ps">DE0-Nano</span><span
-414
                             class="ps">Quartus</span></div>
-415
                     <br><a href="https://github.com/aswin0904/Eyantra" target="_blank" class="gh-btn"><svg width="13"
-416
                             height="13" viewBox="0 0 24 24" fill="currentColor">
-417
                             <path
-418
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-419
                         </svg>GitHub ↗</a>
-420
                 </div>
-421
             </div>
-422
         </div>
-423
 
-424
         <!-- HW tab -->
-425
         <div class="tp" id="tp-hw">
-426
             <div class="pg">
-427
                 <div class="pc r">
-428
                     <div class="pm"><span class="py">2025</span><span class="pb pb-g">PCB</span></div>
-429
                     <h3 class="pt">PCB Transceiver for Drone Control</h3>
-430
                     <p class="pd">Hand-fabricated PCB with STM32 + nRF24L01 RF. Custom C firmware handles signal
-431
                         encoding and PWM motor control. Tested for noise, range, and signal integrity.</p>
-432
                     <div class="pst"><span class="ps">KiCad</span><span class="ps">STM32</span><span
-433
                             class="ps">C</span><span class="ps">RF</span></div>
-434
                     <br><a href="https://github.com/aswin0904/Stm32_based_Transceiver" target="_blank"
-435
                         class="gh-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-436
                             <path
-437
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-438
                         </svg>GitHub ↗</a>
-439
                 </div>
-440
                 <div class="pc r">
-441
                     <div class="pm"><span class="py">2025</span><span class="pb pb-p">Embedded</span></div>
-442
                     <h3 class="pt">IMU Sensor Fusion with Kalman Filter</h3>
-443
                     <p class="pd">Fused accel, gyro, and magnetometer for stable roll/pitch/yaw. Kalman filter cuts
-444
                         noise — robust enough for real flight disturbances.</p>
-445
                     <div class="pst"><span class="ps">Python</span><span class="ps">Kalman Filter</span><span
-446
                             class="ps">IMU</span></div>
-447
                     <br><a href="https://github.com/aswin0904/Sensor-Fusion-with-kalman-filter" target="_blank"
-448
                         class="gh-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-449
                             <path
-450
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-451
                         </svg>GitHub ↗</a>
-452
                 </div>
-453
                 <div class="pc r">
-454
                     <div class="pm"><span class="py">STM32F103C8T6</span><span class="pb pb-p">Embedded</span></div>
-455
                     <h3 class="pt">I2C Low-Level Driver for STM32 Blue Pill</h3>
-456
                     <p class="pd">Designed and developed a register-level I2C driver covering GPIO configuration, peripheral clock setup, register configuration, and START/STOP condition generation. Implemented data transmission and reception, slave addressing, ACK/NACK handling, and status flag monitoring. Debugged and validated hardware communication and integrated the driver with the application layer.</p>
-457
                     <div class="pst"><span class="ps">C</span><span class="ps">STM32F103C8T6</span><span class="ps">I2C</span><span class="ps">Register-Level</span><span class="ps">GPIO</span></div>
-458
                 </div>
-459
             </div>
-460
         </div>
-461
 
-462
         <!-- SW tab -->
-463
         <div class="tp" id="tp-sw">
-464
             <div class="pg">
-465
                 <div class="pc featured r">
-466
                     <div class="featured-accent"></div>
-467
                     <div class="featured-inner">
-468
                         <div class="featured-header">
-469
                             <div class="featured-badge"><span class="feat-star">★</span> Featured Project</div>
-470
                             <span class="py">2025 — Coursera · Nand2Tetris</span>
-471
                         </div>
-472
                         <h3 class="pt featured-title">Hack Computer<br><span class="feat-sub">Full 16-bit Stack</span>
-473
                         </h3>
-474
                         <p class="pd">16-bit CPU in Verilog + assembler + VM translator + JACK compiler. Every layer of
-475
                             the hardware-software stack, built from scratch.</p>
-476
                         <div class="pst"><span class="ps">Verilog</span><span class="ps">Python</span><span
-477
                                 class="ps">Compiler</span><span class="ps">Assembler</span></div>
-478
                         <div class="featured-footer">
-479
                             <a href="https://github.com/aswin0904/HACK" target="_blank" class="gh-btn"><svg width="13"
-480
                                     height="13" viewBox="0 0 24 24" fill="currentColor">
-481
                                     <path
-482
                                         d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.04c-3.34.73-4.03-1.6-4.03-1.6-.55-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-483
                                 </svg>View on GitHub ↗</a>
-484
                         </div>
-485
                     </div>
-486
                 </div>
-487
                 <div class="pc r">
-488
                     <div class="pm"><span class="py">Linux Kernel</span><span class="pb pb-g">Software</span></div>
-489
                     <h3 class="pt">Linux Device Driver Development</h3>
-490
                     <p class="pd">Developed Linux kernel modules in C and explored kernel-level programming. Implemented kernel-to-user space data communication through system calls, and built and tested modules using a Makefile with insmod, lsmod, and rmmod.</p>
-491
                     <div class="pst"><span class="ps">C</span><span class="ps">Linux Kernel</span><span class="ps">Device Drivers</span><span class="ps">Makefile</span></div>
-492
                 </div>
-493
             </div>
-494
         </div>
-495
     </div>
-496
 
-497
     <hr class="div">
-498
 
-499
     <!-- EDUCATION -->
-500
     <div class="sec" id="experience">
-501
         <div class="r">
-502
             <div class="sec-lbl">03 — Experience</div>
-503
             <h2 class="sec-h">Where I've worked,<br><em>what I built</em></h2>
-504
         </div>
-505
         <div class="exp-g r">
-506
             <div class="exp-card">
-507
                 <div class="exp-top">
-508
                     <div>
-509
                         <div class="exp-role">Indian Institute of Technology Madras — RISE Lab</div>
-510
                         <div class="exp-proj">Flight Controller Hardware · Arty A7-100T FPGA</div>
-511
                     </div>
-512
                     <span class="py">May — July 2026</span>
-513
                 </div>
-514
                 <ul class="exp-list">
-515
                     <li>Designed the complete flight controller hardware PCB for the Arty A7-100T FPGA, integrating
-516
                         essential peripherals and interface circuits for embedded flight control applications.</li>
-517
                     <li>Designed a signal-isolation circuit to electrically isolate the FPGA from the Electronic Speed
-518
                         Controller (ESC), improving hardware protection and signal reliability.</li>
-519
                     <li>Performed hardware debugging using a logic analyzer and oscilloscope to troubleshoot and
-520
                         validate MPU6050 and MS5611 sensor communication and ESC signal outputs.</li>
-521
                 </ul>
-522
             </div>
-523
             <div class="exp-card">
-524
                 <div class="exp-top">
-525
                     <div>
-526
                         <div class="exp-role">Visteon Scholar Program</div>
-527
                         <div class="exp-proj">Analog &amp; Digital Electronics · Embedded Systems</div>
-528
                     </div>
-529
                     <span class="py">Sep 2025 — May 2026</span>
-530
                 </div>
-531
                 <ul class="exp-list">
-532
                     <li>Gained hands-on experience in analog and digital electronics, circuit design, and hardware
-533
                         integration through real-time embedded systems projects.</li>
-534
                     <li>Developed 10 hands-on STM32 based mini projects, integrating hardware and software by
-535
                         interpreting device datasheets, configuring peripherals, developing firmware, and debugging
-536
                         hardware/software issues.</li>
-537
                     <li>Designed and simulated a microcontroller-free room monitoring system using an LDR, ADC0804,
-538
                         NTC thermistor, NE555-based PWM, and MOSFET to automate LED lighting levels and
-539
                         temperature-based blower speed control in Proteus.</li>
-540
                 </ul>
-541
             </div>
-542
         </div>
-543
     </div>
-544
 
-545
     <hr class="div">
-546
 
-547
     <!-- EDUCATION -->
-548
     <div class="sec" id="education">
-549
         <div class="r">
-550
             <div class="sec-lbl">04 — Education</div>
-551
             <h2 class="sec-h">Where I studied,<br><em>what I achieved</em></h2>
-552
         </div>
-553
         <div class="edu-g r">
-554
             <div class="ec">
-555
                 <div class="ep">Sep 2023 — Present</div>
-556
                 <div class="es">Sri Sivasubramaniya Nadar College of Engineering</div>
-557
                 <div class="ed">B.E. Electrical &amp; Electronics Engineering · Chennai, TN</div>
-558
                 <div class="sc-row">
-559
                     <div><span class="sc-n">8.24</span><span class="sc-l">CGPA / 10</span></div>
-560
                 </div>
-561
             </div>
-562
             <div class="ec">
-563
                 <div class="ep">June 2022</div>
-564
                 <div class="es">Sowdambikka Matric Boys Higher Secondary School</div>
-565
                 <div class="ed">12th Standard · Thuraiyur, TN</div>
-566
                 <div class="sc-row">
-567
                     <div><span class="sc-n">96.2</span><span class="sc-l">Board / 100</span></div>
-568
                     <div><span class="sc-n">90.8</span><span class="sc-l">JEE %ile</span></div>
-569
                 </div>
-570
             </div>
-571
         </div>
-572
         <div class="award r">
-573
             <div class="award-ico">🏆</div>
-574
             <div>
-575
                 <div class="award-t">Qualified Top 25 — E-Yantra Robotics Challenge, IIT Bombay</div>
-576
                 <div class="award-d">Ranked among the top 25 teams nationally, building an FPGA-based autonomous
-577
                     maze-solving robot with multi-sensor fusion using ultrasonic, soil moisture, and DHT11 sensors on a
-578
                     DE0-Nano board.</div>
-579
             </div>
-580
         </div>
-581
     </div>
-582
 
-583
     <hr class="div">
-584
 
-585
     <!-- CERTS -->
-586
     <div class="sec" id="certs">
-587
         <div class="r">
-588
             <div class="sec-lbl">05 — Certifications</div>
-589
             <h2 class="sec-h">Courses completed,<br><em>knowledge earned</em></h2>
-590
         </div>
-591
         <div class="cert-g r">
-592
             <div class="cc">
-593
                 <div class="cf">NPTEL · IIT Delhi</div>
-594
                 <div class="cn">Computer Architecture</div>
-595
                 <div class="ci">Prof. Smruti Ranjan Sarangi</div>
-596
                 <div class="cdone">Completed</div>
-597
             </div>
-598
             <div class="cc">
-599
                 <div class="cf">NPTEL · IIT Madras</div>
-600
                 <div class="cn">Operating System</div>
-601
                 <div class="ci">Prof.Chester Rebeiro</div>
-602
                 <div class="cdone">Completed</div>
-603
             </div>
-604
             <div class="cc">
-605
                 <div class="cf">NPTEL · IIT Kharagpur</div>
-606
                 <div class="cn">Hardware Modelling with Verilog</div>
-607
                 <div class="ci">Prof. Indranil Sen Gupta</div>
-608
                 <div class="cdone">Completed</div>
-609
             </div>
-610
             <div class="cc">
-611
                 <div class="cf">SASTRA University</div>
-612
                 <div class="cn">RTL to GDS Workshop</div>
-613
                 <div class="ci">Cadence — Genus, Innovus, Tempus, Modus</div>
-614
                 <div class="cdone">Completed</div>
-615
             </div>
-616
         </div>
-617
     </div>
-618
 
-619
     <hr class="div">
-620
 
-621
     <!-- CONTACT -->
-622
     <div class="sec" id="contact">
-623
         <div class="r">
-624
             <div class="sec-lbl">06 — Contact</div>
-625
             <h2 class="sec-h">Let's talk hardware,<br><em>or anything interesting</em></h2>
-626
         </div>
-627
         <div class="contact-g r">
-628
             <div>
-629
                 <p class="c-intro">I'm open to research internships, hardware engineering roles, and interesting
-630
                     collaborations. If you're working on RTL design, FPGA, embedded systems, or VLSI — I'd love to
-631
                     connect.</p>
-632
                 <div class="c-links">
-633
                     <a href="tel:+919342795507" class="crow">
-634
                         <span class="ct">Phone</span><span class="cv">+91 93427 95507</span>
-635
                     </a>
-636
                     <a href="mailto:aswinkumar2310864@ssn.edu.in" class="crow">
-637
                         <span class="ct">Email</span><span class="cv">aswinkumar2310864@ssn.edu.in</span>
-638
                     </a>
-639
                     <a href="https://github.com/aswin0904" target="_blank" class="crow">
-640
                         <span class="ct">GitHub</span><span class="cv">github.com/aswin0904</span>
-641
                     </a>
-642
                     <a href="https://www.linkedin.com/in/aswin-kumar-a-" target="_blank" class="crow">
-643
                         <span class="ct">LinkedIn</span><span class="cv">linkedin.com/in/aswin-kumar-a-</span>
-644
                     </a>
-645
                 </div>
-646
             </div>
-647
             <div class="c-right">
-648
                 <h3>Open to internships &amp; research roles</h3>
-649
                 <p>Particularly interested in RTL design, computer architecture, VLSI physical design, and
-650
                     hardware-software co-design. Based in Chennai, open to remote or on-site.</p>
-651
                 <a href="mailto:aswinkumar2310864@ssn.edu.in" class="btn-paper">Send me an email →</a>
-652
             </div>
-653
         </div>
-654
     </div>
-655
 
-656
     <hr class="div">
-657
 
-658
     <footer>
-659
         <span class="fl">Aswin Kumar A</span>
-660
         <span class="fr">EEE · SSN College of Engineering · Chennai · 2026</span>
-661
     </footer>
-662
 
-663
     <script src="./script.js"></script>
-664
 </body>
-665
 
-666
 </html>
-667
