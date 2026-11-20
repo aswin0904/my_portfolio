@@ -1482,3 +1482,15 @@ footer {
     /* adjust to your card width */
     justify-self: center;
 }
+
+/* Contact: spacing between adjacent paper buttons */
+.c-right .btn-paper + .btn-paper {
+    margin-left: .75rem;
+    margin-top: .5rem;
+}
+
+@media (max-width: 600px) {
+    .c-right .btn-paper + .btn-paper {
+        margin-left: 0;
+    }
+}
